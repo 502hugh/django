@@ -1,0 +1,25 @@
+web应用程序·
+
+web框架
+    把冗杂的步骤交给已有的框架，用于搭建web程序
+   
+Django
+  采用MVT的软件设计模式，即
+      模型（model)    ：负责和数据库交互，完成数据处理
+      视图（vim）      接收请求，进行业务处理，返回            ＝＝＝＝＝＝＝   类似MCV里的C的功能
+      模板（Template)  负责封装构造返回html                   ＝＝＝＝＝＝＝   类似于MCV里的V功能
+    由MVC模式衍生出来的，m和v一样，c是controller，控制器，调用模型来获取数据
+   
+    学习模式  路由器＋MVT
+  
+                urls.py         [分发路由]        <<<<<<<<<<<<<<<< 浏览器
+                view.py          视图函数(渲染)   >>>>>>>>>>>>>>>>>>浏览器
+                      model.py             －－－－－－－－－－－   mysql（数据库）
+                      templates
+  
+  几条命令
+    django－admin startproject demo      （创建一个项目）
+    python manage.py rumserver IP PORT  (启动命令)
+  
+ 
+    
